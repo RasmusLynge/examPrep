@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="DO_NOT_RENAME_ME" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <!-- This is the template usd for all databases (persistence units) used by this project -->
+    <!-- Remember to add your Entity Classes below -->
+    <class>entity.Role</class>
+    <class>entity.User</class>
+    <class>entity.Wish</class>
+    <properties>
+      <!-- DONT ADD ANYTHING HERE
+      This part will come from one of the pu_xxxx.properties files -->
+    </properties>
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,18 @@
+language: java
+jdk: oraclejdk8
+
+cache:
+  directories:
+    - $HOME/.m2
+
+script:
+  - mvn -DPU_NAME=pu_travis_integration_test verify
+  - mvn -Dremote.user=$REMOTE_USER -Dremote.password=$REMOTE_PW tomcat7:deploy
+  # Verify that we have a deployed project
+  - mvn verify -PACCEPT_TEST
+
+services:
+   - mysql
+   
+before_install:
+  - mysql -e 'CREATE DATABASE travis_test;'

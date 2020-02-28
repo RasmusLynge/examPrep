@@ -16,7 +16,7 @@
     <remote.server>https://www.rasmuslynge.com/manager/text</remote.server>
         
     <!--<tomcat.version>7.0.93</tomcat.version>-->
-    <tomcat.version>8.5.40</tomcat.version>
+    <tomcat.version>9.0.31</tomcat.version>
   </properties>
     
   <dependencies>
